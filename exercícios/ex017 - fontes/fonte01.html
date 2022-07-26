@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+             /* o navegador usa a primeira fonte que ele suporta: 1-fonte arial; 2-fonte helvetica;           3- sans-serif (alguma fonte sem serifa)
+            safe combinations em css; serifada para títulos, pois chama atenção 
+             
+             font-size -> medidas absolutas: cm, mm, in(polegadas), pt (pontos), pc
+                          medidas relativas: em, ex, rem, vw, vh, %
+                          px e em são as medidas recomendadas pela w3schools
+                          16px é o tamanho padrão usado nos browsers = 1em
+             */
+             font-size: 1em;
+             /*peso da fonte - lighter, normal, bold, bolder ou de 100-900 */
+             font-weight: normal;
+             
+             /*text-decoration: underline; */
+        
+
+        }
+
+        h1 {
+            /* font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size:   3em;
+            font-style:  italic; 
+            shorthand font - condensar as configurações em uma linha
+            ordem da shorthand font: font-style -> font-weight -> font-size -> font famliy 
+           */
+           font: italic bold 3em 'Times New Roman', serif;  
+        }
+
+        h2 {
+            font: bold 2em 'Times', sans-serif; /* se não quiser mexer em algum seletor, tudo bem (font-style não foi alterado) */
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur molestias, eius ipsam natus labore sequi nam voluptates laudantium hic perspiciatis nulla libero sapiente ratione praesentium enim repudiandae doloremque explicabo. Odio nemo enim laboriosam est animi harum culpa corporis aliquam ab sunt iusto, iure soluta dolor saepe adipisci eligendi debitis quam atque excepturi porro ullam. Dolorem adipisci tempore cumque quisquam sapiente eos qui? Officia deserunt iure mollitia aut placeat, itaque velit impedit accusantium saepe odio quibusdam. Quam deserunt animi dolore. Minus, asperiores architecto a, animi quas debitis minima maxime ipsum sit quis nesciunt voluptatem suscipit, deleniti nemo veritatis rem cupiditate laborum!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea dicta consequuntur natus dolores, in necessitatibus illo numquam sequi, explicabo dolorem possimus voluptate eius nisi atque delectus eos impedit, quisquam quo.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sunt ipsum architecto expedita, ratione necessitatibus dolore tempore reiciendis modi quasi consequatur odit ipsam, est maxime numquam distinctio exercitationem odio ducimus?</p>
+</body>
+</html>

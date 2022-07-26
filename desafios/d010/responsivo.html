@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px;/*o tamanho mínimo que vai usar é 320px, mas tem as margens, então usou 280px (width de tela de celular mais antigos)*/
+            max-width: 800px;/*o tamanho máximo que vai usar é 800px, mesmo numa tela gigante*/
+            margin: auto; /*centraliza a box*/
+        }
+
+        img {
+            /*a imagem vai se ajustando de acordo com o ajuste da tela*/
+            width: 100%; 
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis modi deserunt rem minus minima suscipit magnam, vitae illum iusto cumque officiis autem assumenda doloribus, neque sit consequuntur ratione. Consequuntur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat maxime error praesentium assumenda itaque hic odit quas vel facere quis fugit harum doloribus illum molestiae rerum, suscipit porro quidem magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, deleniti, quae unde beatae nostrum recusandae aut numquam excepturi delectus molestiae modi laudantium officiis doloremque hic architecto neque ratione. Laudantium, qui?</p>
+
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis modi deserunt rem minus minima suscipit magnam, vitae illum iusto cumque officiis autem assumenda doloribus, neque sit consequuntur ratione. Consequuntur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat maxime error praesentium assumenda itaque hic odit quas vel facere quis fugit harum doloribus illum molestiae rerum, suscipit porro quidem magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, deleniti, quae unde beatae nostrum recusandae aut numquam excepturi delectus molestiae modi laudantium officiis doloremque hic architecto neque ratione. Laudantium, qui?</p>
+    </main>
+</body>
+</html>

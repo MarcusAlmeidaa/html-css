@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <h2>Tente abrir esse site em diferentes aparelhos ou simplesmente altere o tamanho do seu navegador</h2>
+
+    <picture>
+        <!--midias de tamanho diferentes usando a tag picture, usando em sequencia, do menor para o maior p ->m ->g , com o source sendo o que vai ajustar dependendo do tamanho da tela-->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto flexível">
+        <!--o tamanho padrão é pela tag img-->
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="auto" controls autoplay>
+        <!--preload auto é padrão = baixa todo o audio para abrir o site(muito pesado), preload metadata carrega alguns dados, e preload none só carrega quando o usuário der play-->
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midias/guanacast-33.ogg" type="audio/ogg">
+        <source src="midias/guanacast-33.wav" type="audio/wav">
+        <!--wav é tipo de arquivo pesado, evitar o uso-->
+
+    </audio>
+    <p>Ou se você preferir, clique <a href="midias/guanacast-33.mp3" download="guanacast-33" type="audio/mpeg" target=""
+            _blank>aqui</a> para baixar o arquivo MP3.</p>
+</body>
+
+</html>

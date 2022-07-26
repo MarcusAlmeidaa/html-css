@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <h2>Tente abrir esse site em diferentes aparelhos ou simplesmente altere o tamanho do seu navegador</h2>
+
+    <picture>
+        <!--midias de tamanho diferentes usando a tag picture, usando em sequencia, do menor para o maior p ->m ->g , com o source sendo o que vai ajustar dependendo do tamanho da tela-->
+        <!--300 pixels para tela pequena, 700px para tela media e 1000px para tela grande-->
+        <!--source media segue com tamanho -> local da imagem srcset e tipo de imagem type-->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto flexível">
+        <!--o tamanho padrão é pela tag img-->
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midias/Et Voila - Chris Haugen.mp3" controls autoplay></audio>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*vai mexer no p dentro da div, ocultando o parágrafo com display: none*/
+        div > p {
+            display: none;
+        }
+        /*quando passar o mouse em cima da div, o parágrafo dentro de div vai mostrar o que tem no conteúdo de p -> display: block =  block com letra branca e background vermelho e com 300px de largura*/ 
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+        /*quando passar o mouse por cima de div, a cor da fonte fica vermelha*/
+        div:hover {
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo:</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO</p>
+    </div>
+    <p>Fim do exemplo</p>
+
+
+</body>
+</html>
