@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+:root {
+    --fontePadrao : Verdana, Geneva, Tahoma, sans-serif;
+    --fonteTitulos : 'Source Sans Pro', sans-serif;
+    --fonteConteudo: 'Patrick Hand', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,6 +18,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--fontePadrao);
 }
 
 header {
@@ -19,6 +30,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /*todas maiúsculas, com a primeira letra sendo maior que as outras*/
+    font-family: var(--fonteTitulos);
+    font-size: 10vw;
 }
 
 header > p {
@@ -41,6 +54,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em; /*distancia entre as linhas*/
     padding-left: 30px;
+    font-family: var(--fonteConteudo);
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -54,7 +69,8 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.226);
 }
 
