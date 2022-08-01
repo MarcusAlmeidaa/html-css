@@ -12,6 +12,14 @@
 
         table {
             border-collapse: collapse;
+            position:relative;
+        }
+
+        caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         th, td {
@@ -21,6 +29,25 @@
 
         thead {
             background-color: gray;
+        }
+
+        thead > tr > th {
+            position: sticky; /* para grudar*/
+            top: 0; /*grudar na parte zero*/
+            background-color: gray; /*para levar o background junto ao dar scroll*/
+        }
+
+        tbody > tr:nth-child(odd) { 
+        /* nth:child() - pseudoclasse que seleciona elementos baseado em suas posições
+        odd = elementos ímpares    ou 2n-1
+        even = elementos pares     ou 2n
+        nesse exemplo: a cor do background vai ser lightgray para as linhas ímpares da tabela
+        */
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: darkgray;
         }
 
         tfoot {
@@ -45,6 +72,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION - LEGENDA/DESCRIÇÃO DA TABELA
             THEAD - TABLE HEAD
                 TR, TD, TH
             TBODY - TABLE BODY
@@ -55,10 +83,14 @@
 
     <table>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
-            <th>% da População</th>
+            <!-- scope="col" serve para indicar pro html que é um título de coluna(os dados estarão na mesma coluna do título)
+            -->
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+            <th scope="col" style="width:80px;">% da População</th>
         </thead>
+
+        <caption>População dos Estados Brasileiros</caption>
 
         <tbody>
             <tr>
@@ -96,11 +128,113 @@
                 <td class="populacao">8 796 448</td>
                 <td class="porcentagem">4,5%</td>
             </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="populacao">9.132.078</td>
+                <td class="porcentagem">4,3%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="populacao">8.602.865</td>
+                <td class="porcentagem">4,1%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="populacao">7.164.788</td>
+                <td class="porcentagem">3,4%</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="populacao">7.075.181</td>
+                <td class="porcentagem">3,4%</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="populacao">7.018.354</td>
+                <td class="porcentagem">3,4%</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="populacao">4.144.597</td>
+                <td class="porcentagem">2,0%</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="populacao">4.018.650</td>
+                <td class="porcentagem">1,9%</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="populacao">4.018.127</td>
+                <td class="porcentagem">1,9%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="populacao">3.506.853</td>
+                <td class="porcentagem">1,7%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="populacao">3.484.466</td>
+                <td class="porcentagem">1,7%</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="populacao">3.337.357</td>
+                <td class="porcentagem">1,6%</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="populacao">3.273.227</td>
+                <td class="porcentagem">1,6%</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="populacao">3.015.268</td>
+                <td class="porcentagem">1,4%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="populacao">2.778.986</td>
+                <td class="porcentagem">1,3%</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="populacao">2.298.696</td>
+                <td class="porcentagem">1,1%</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="populacao">1.777.225</td>
+                <td class="porcentagem">0,8%</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="populacao">1.572.866</td>
+                <td class="porcentagem">0,7%</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="populacao">881.935</td>
+                <td class="porcentagem">0,4%</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="populacao">845.731</td>
+                <td class="porcentagem">0,4%</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="populacao">605.761</td>
+                <td class="porcentagem">0,3%</td>
+            </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <!-- scope="row" serve para indicar pro html que é um título de linha (os dados vão aparecer na mesma linha do título)
+                -->
+                <th scope="row">Total de Habitantes</th>
                 <td class="populacao"><strong>120801267</strong></td>
             </tr>
             
