@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <style>
+        /*as configurações do css têm prioridade sobre as configurações inline, como no primeiro iframe do exemplo onde o width era de 400px, porém o que prevalece é o width 500px da css*/
+        iframe {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Iframes</h1>
+    <p>
+        Acessando o site do 
+        <!--Por padrão, o tamanho do iframe é de 300x150-->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" width="400px;"></iframe>
+        
+        para aprender a programar.
+    </p>
+
+    <p>
+        Alguns sites, como o Google não permitem seu uso para iframes
+
+        <iframe src="https://www.google.com" frameborder="0"></iframe>
+    </p>
+
+    <p>
+        Meu repositório
+
+        <iframe src="https://github.com/marcusalmeidaa" target="_blank" frameborder="0">
+            <a href="https://gustavoguanabara.github.io">GitHub</a>
+        </iframe>
+
+
+    </p>
+
+
+</body>
+</html>

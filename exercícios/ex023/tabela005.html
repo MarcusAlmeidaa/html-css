@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: gray;
+        }
+
+       th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .colNome{
+            background-color: yellowgreen;
+        }
+
+        .colSexo {
+            background-color: skyblue;
+        }
+
+        .colGrupo {
+            background-color: orangered;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+
+    <table>
+        <!--colgroup - tag que seleciona as colunas mais facilmente
+        cria uma tag col dentro de colgroup para cada coluna da tabela
+        no exemplo abaixo são 4 colunas: nome, sexo, idade e profissão
+        -->
+        <colgroup>
+            <col class="colNome">
+            <col class="colSexo">
+            <col class="colGrupo" span="2">  <!--span para as duas últimas colunas do exemplo-->
+            
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>25</td>
+            <td>F</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Lucas</td>
+            <td>26</td>
+            <td>M</td>
+            <td>Físico</td>
+        </tr>
+
+        <tr>
+            <td>Mariana</td>
+            <td>32</td>
+            <td>F</td>
+            <td>Atleta</td>
+        </tr>
+
+        <tr>
+            <td>Antonio</td>
+            <td>22</td>
+            <td>M</td>
+            <td>Engenheiro</td>
+        </tr>
+
+        <tr>
+            <td>Henrique</td>
+            <td>27</td>
+            <td>M</td>
+            <td>Cientista</td>
+        </tr>
+
+        <tr>
+            <td>Julia</td>
+            <td>22</td>
+            <td>F</td>
+            <td>Advogada</td>
+        </tr>
+    </table>
+</body>
+</html>
