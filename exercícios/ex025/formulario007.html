@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!-- Usando select e option para criar uma lista de seleção 
+        usando o optgroup você pode agrupar os itens e colocar um artibuto label para categorizar.
+        selected é um atributo para valor inicial padrão mostrado no elemento
+
+        datalist também é usado para selecionar alguma opção, porém você também pode escrever caso a opção não exista
+
+        textarea é usado para criar área de texto. é recomendado usar o method post no form que usa textarea, pois o get aceita até 3000Bytes apenas.
+    -->
+    <h1>Formulário 07</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Região Nordeste">
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option>
+                </optgroup>
+            </select>
+
+            <p>
+                <label for="prof">Profissão</label>
+                <input type="text" name="prof" id="prof" list="lista">
+                <datalist id="lista">
+                    <option>Administrador</option>
+                    <option>Bombeiro</option>
+                    <option>Engenheiro</option>
+                    <option>Professor</option>
+                </datalist>
+            </p>
+        </p>
+
+            <label for="msg">Mensagem:</label> <br>
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
