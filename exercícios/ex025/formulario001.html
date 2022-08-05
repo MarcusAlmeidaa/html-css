@@ -8,7 +8,9 @@
 </head>
 <body>
     <h1>Primeiro Formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <!--o method por padrão é get, aparecendo na url os dados enviados nos campos do formulário
+    settando o method para post não é mostrado na url os dados preenchidos nos campos-->
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p>
             <label for="nome">Nome:</label> 
             <input type="text" name="nome" id="nome"></p>
