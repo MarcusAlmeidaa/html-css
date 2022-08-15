@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    /*essas propriedades sempre na div pai*/
+    height: 500px;
+    display: flex;
+    background-color: blue;
+    flex-flow: row wrap; /*shorthand para posição dos elementos (row or column) e se envelopa os elementos na div container ou não (wrap ou nowrap)*/
+    justify-content: center; /*alinhamento de elementos na horizontal*/
+    align-items: center; /*alinhamento dos elementos na vertical*/
+    align-content: center; /*alinha todos os elementos em grupo para uma determinada posição*/
+}
+
+/*misturando media query com flexbox
+    caso a tela tenha no máximo 600px de width, a div pai vai posicionar os elementos que são em linha para coluna
+*/
+@media screen and (max-width: 600px) { 
+    .container {
+        flex-direction: column;
+    }
+}
+
+.container div {
+    background-color: white;
+    border: 1px solid black;
+    padding: 30px;
+    text-align: center;
+
+}
