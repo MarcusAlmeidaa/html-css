@@ -26,6 +26,10 @@
         margin:5%;  
     }
 
+    .headline p {
+        text-align: center;
+    }
+
     .img-headline {
         flex:100%;
         margin:5%;
