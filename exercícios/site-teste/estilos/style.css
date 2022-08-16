@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Lobster&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+.nav h1 {
+    font-family: 'Lobster', cursive;
+    color: #392F5A;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.logo {
+    flex: 20%;
+    margin-left: 10%;
+}
+
+.links {
+    flex: 70%;
+    text-align: right;
+    padding: 15px;
+}
+
+.links a {
+    color: #392F5A;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px; 
+}
+
+.links a:hover {
+    background-color: #f092dd4d;
+    font-weight: bold;
+    border-top: 2px solid #392F5A;
+    border-radius: 0px 0px 5px 5px;;
+}
+
+#botao {
+    background-color: #ff2978;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#botao:hover {
+    border: none;
+    background-color: #ff297881;
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    padding-top: 100px;
+}
+
+.headline {
+    margin-left: 10%;
+    flex: 40%;
+}
+
+.headline h2 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #392F5A;
+}
+
+.headline p {
+    text-align: left;
+    color: gray;
+}
+
+.link-btn{
+    display: inline-block;
+    background-color: #392F5A;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    color: lightgray;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-btn:hover {
+    background-color: #5f4f99;
+    color: white;
+}
+
+.img-headline {
+    margin-right: 10%;
+    flex: 40%;
+    text-align: center;
+}
+
+section {
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    text-align: center;
+}
+
+section h2 {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: 'Lobster', cursive;
+    font-weight: bold; 
+    font-size: 2.5em;
+    color:#392F5A;
+}
+
+.servicos {
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid #FF2978;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.texto-oculto {
+    display: none;
+}
+
+.card:hover {
+    background-color: #ff2978;
+    color: white;
+    padding: 55px;
+}
+
+.card:hover img {
+    display: none;
+}
+
+.card:hover .card-text {
+    display: none;
+}
+
+.card:hover .texto-oculto {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    margin-top: 80px;
+    height: 340px;
+    background-image:linear-gradient(180deg,#180F4A,#090422,black);
+    border-top:5px solid #FF2978;
+}
+
+.logo-footer {
+    padding:100px;
+}
+
+#titulo-footer {
+    font-family: 'Lobster', cursive;
+    color:white;
+    font-size:34px;
+    padding: 10px;
+}
+
+.p-footer {
+    color: white;
+    padding-top: 10px;
+}
+
+.whats {
+    position: fixed;
+    bottom:5px;
+    right:5px;
+}
+
+
