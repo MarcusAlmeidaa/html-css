@@ -12,6 +12,25 @@
 */
 
 @media print { /*impressão*/
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+   
+
+    main {
+        width: 90vw;
+        border: 1px solid black;
+    }
+
+    #print {
+        display: block;
+        margin: auto;
+    }
+
+    #phone {
+        display: none;
+    }
 
 }
 
@@ -19,16 +38,47 @@
     body {
         background-image: url('../imagens/back-tablet.jpg');
     }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+        margin: auto;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) { /*desktops*/
     body {
         background-image: url('../imagens/back-pc.jpg');
     }
+
+    #phone {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+        margin: auto;
+    }
 }
 
 @media screen and (min-width:1200px) { /*telas grandes*/
     body {
         background-image: url('../imagens/back-tv.jpg');
+    }
+
+    main {
+        width: 80%;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tv {
+        display: block;
+        margin: auto;
     }
 }
