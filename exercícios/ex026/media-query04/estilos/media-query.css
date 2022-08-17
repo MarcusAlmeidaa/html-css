@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/*Restante das mídias*/
+
+/*Typical devices breakpoints
+    telas pequenas: até 600px
+    smartphones: 600px até 768px
+    tablets: 768px até 992px
+    desktops: 992px até 1200px
+    TV's: acima de 1200px
+    o de telas pequenas e smartphones foram feitos no css de mobile first
+*/
+
+@media print { /*impressão*/
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*tablets*/
+    body {
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*desktops*/
+    body {
+        background-image: url('../imagens/back-pc.jpg');
+    }
+}
+
+@media screen and (min-width:1200px0) { /*telas grandes*/
+    body {
+        background-image: url('../imagens/back-tv.jpg');
+    }
+}
