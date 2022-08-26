@@ -4,7 +4,6 @@
 
 * {
     margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -64,18 +63,16 @@ nav li:hover {
 }
 
 main {
-    background-color: rgba(211, 211, 211, 0.596);
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 article {
-    background-color: white;
-    width: 90vw;
     padding: 20px;
-    margin: auto;
-    margin-top: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
 }
 
 article h2 {
