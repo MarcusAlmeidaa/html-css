@@ -23,7 +23,7 @@ header h1 {
 }
 
 #burguer {
-    background-color: gray;
+    background-color: rgb(78, 121, 138);
     display: block;
     color: white;
     text-align: center;
@@ -32,7 +32,7 @@ header h1 {
 }
 
 #burguer:hover {
-    background-color: white;
+    background-color: rgb(50, 131, 163);
     color: black;
 }
 
