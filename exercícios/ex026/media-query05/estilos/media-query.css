@@ -7,12 +7,14 @@
 
     nav#itens {
         display: block;
+        
     }
 
     nav ul li {
         display: inline-block;
         border-radius: 5px;
         border: none;
+        margin: 10px;  
     }
 
     main {

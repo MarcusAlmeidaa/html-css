@@ -7,22 +7,23 @@
     box-sizing: border-box;
 }
 
-body, html {
-    background-color: rgba(211, 211, 211, 0.596);
+body {
+    background-color: #CDC0F0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header {
-    background-color: skyblue; 
+    background-color: #5031A3; 
     padding: 10px;
 }
 
 header h1 {
     text-align: center;
+    color: #F0ECC0;
 }
 
 #burguer {
-    background-color: rgb(78, 121, 138);
+    background-color: #A39F72;
     display: block;
     color: white;
     text-align: center;
@@ -31,7 +32,7 @@ header h1 {
 }
 
 #burguer:hover {
-    background-color: rgb(50, 131, 163);
+    background-color: #c7c28b;
     color: black;
 }
 
@@ -44,7 +45,7 @@ nav ul {
 }
 
 nav li {
-    background-color: rgb(50, 131, 163);
+    background-color: #A39F72;
     padding: 5px;
     margin-left: 5px;
     border-top: 2px solid rgba(211, 211, 211, 0.596);
@@ -59,14 +60,14 @@ nav a {
 }
 
 nav li:hover {
-    background-color: rgb(60, 157, 196);
+    background-color: #c7c28b;
 }
 
 main {
     width: 90vw;
     background-color: white;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
